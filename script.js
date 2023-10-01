@@ -20,7 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
     displayMessage('Correct number 😎');
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
-    displayMessage(secretNumber);
+    document.querySelector('.number').textContent = secretNumber;
 
     if (score > highscore) {
       highscore = score;
